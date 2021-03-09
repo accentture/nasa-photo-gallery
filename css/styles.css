@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #151e27;
+}
+#header {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  flex-basis: 100%;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 2px solid rgb(231, 216, 216);
+  text-align: center;
+  color: rgb(231, 216, 216);
+}
+nav {
+  flex-basis: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+nav #yearList {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.year {
+  flex-basis: 44%;
+  height: 26px;
+  line-height: 26px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 4px;
+  color: rgb(231, 216, 216);
+  background-color: #070816bb;
+  border: 1px solid rgb(24, 21, 21);
+  text-align: center;
+  font-size: 125%;
+}
+.year:hover {
+  background-color: rgb(4, 36, 83);
+  cursor: pointer;
+}
+
+/* boton de año activado */
+.year.yearActivated {
+  background-color: rgb(4, 36, 83);
+}
+div.mainContainer {
+  visibility: hidden;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+section {
+  flex-basis: 82%;
+  height: 573px;
+}
+aside {
+  flex-basis: 18%;
+  height: 570px;
+  display: flex;
+  flex-direction: column;
+  background-color: #2d2b27;
+}
+aside img {
+  width: 100%;
+}
+
+/* para las cajas pequeñas del drag scroll */
+.grid-container {
+  height: 100%;
+  background: #121415;
+  font-family: "Rubik", sans-serif;
+}
+
+/* ENABLE CSS GRID FOR LIFT OFF  🚀 */
+@supports (display: grid) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+
+    /* Let the craziness begin!!! */
+    grid-template-areas: "main";
+  }
+
+  .grid-item {
+    color: #fff;
+    background: skyblue;
+    padding: 3.5em 1em;
+    font-size: 1em;
+    font-weight: 700;
+  }
+
+  .main {
+    width: 99.5%;
+    height: 103.5%;
+    background-color: rgb(18 20 21);
+    grid-area: main;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 0;
+    padding-left: 5px;
+  }
+
+  .containerPhotos {
+    position: relative;
+    width: 99%;
+
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    transition: all 0.2s;
+    transform: scale(0.98);
+    will-change: transform;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  /* para eliminar el drag scroll */
+  .containerPhotos._disable {
+    overflow: unset;
+  }
+
+  .photoBox {
+    display: inline-block;
+    background: rgb(68, 68, 68);
+    width: 100%;
+    height: 31.1em;
+    margin-top: 4%;
+    margin-left: 4%;
+    @media screen and (max-width: 500px) {
+      min-height: 200px;
+      min-width: 200px;
+    }
+  }
+  .containerPhotos.active {
+    cursor: grabbing;
+  }
+}
+
+/* ESTILOS PARA CAJA DE FOTOS */
+.img {
+  width: 100%;
+  height: 94%;
+  background-color: rgb(6, 82, 6);
+  margin-top: -20px;
+}
+.imgTitle {
+  width: min-content;
+  margin: 0px auto;
+  color: white;
+  font-family: "Mystery Quest";
+}
+.dateTitle {
+  width: min-content;
+  position: relative;
+  left: 86%;
+  bottom: 3%;
+  color: white;
+}
+
+/* ESTILOS PARA LOS MESES DEL AÑO */
+#listMonths {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+.month {
+  width: 87%;
+  background-color: #b89413;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 5px;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+}
+.month:hover {
+  background-color: rgb(105, 4, 17);
+  border: 0.01px solid rgb(80, 85, 16);
+  color: rgb(231, 216, 216);
+  cursor: pointer;
+}
+.month.monthActivated {
+  background-color: rgb(105, 4, 17);
+  color: rgb(231, 216, 216);
+  border: 0.01px solid rgb(80, 85, 16);
+}
+
+/* PARA MENSAJES COMPONENT */
+#message {
+  width: 100%;
+  height: 166%;
+  background-color: rgb(105, 4, 17);
+  position: relative;
+  top: -66%;
+  color: white;
+  font-size: 30px;
+  border-radius: 5px;
+
+  display: flex;
+  text-align: center;
+  visibility: hidden;
+  text-align: center;
+  font-size: 218%;
+}
+footer {
+  width: 100%;
+  color: white;
+  text-align: center;
+}

@@ -1,0 +1,191 @@
+@media (max-width: 982px) {
+  section {
+    flex-basis: 78%;
+  }
+  aside {
+    flex-basis: 22%;
+  }
+}
+@media (max-width: 926px) {
+  #message {
+    top: -57%;
+    height: 156%;
+  }
+}
+
+@media (max-width: 790px) {
+  div.mainContainer {
+    flex-flow: row wrap;
+  }
+
+  aside {
+    flex-basis: 100%;
+    flex-direction: row;
+    height: auto;
+  }
+  aside img {
+    width: 25%;
+    height: 181px;
+  }
+  #listMonths {
+    flex-basis: 80%;
+    flex-flow: row wrap;
+    display: flex;
+    align-items: center;
+  }
+  .month {
+    flex-basis: 25%;
+    flex-grow: 1;
+    height: 25px;
+    line-height: 25px;
+    margin: 5px;
+  }
+  section {
+    flex-basis: 100%;
+    height: 464px;
+  }
+  .photoBox {
+    width: 88%;
+    height: 27.1em;
+  }
+  .dateTitle {
+    left: 84%;
+    bottom: 4%;
+  }
+  #message {
+    top: -59%;
+    height: 159%;
+  }
+}
+@media (max-width: 722px) {
+  #message {
+    top: -49%;
+    height: 149%;
+  }
+}
+@media (max-width: 690px) {
+  aside img {
+    width: 29%;
+  }
+  .grid-container {
+    height: 92%;
+  }
+  .main {
+    height: 101%;
+  }
+  .photoBox {
+    width: 82%;
+    height: 24.1em;
+  }
+  .dateTitle {
+    left: 84%;
+    bottom: 4%;
+  }
+  .dateTitle {
+    visibility: hidden;
+  }
+  #message {
+    top: -46%;
+    height: 146%;
+  }
+}
+@media (max-width: 666px) {
+  .title {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+@media (max-width: 587px) {
+  #message {
+    top: -36%;
+    height: 136%;
+  }
+}
+@media (max-width: 576px) {
+  aside img {
+    width: 30%;
+  }
+  .title {
+    font-size: 18px;
+  }
+}
+@media (max-width: 522px) {
+  .grid-container {
+    height: 78%;
+  }
+  .main {
+    height: 102.6%;
+  }
+  .photoBox {
+    height: 20em;
+  }
+  #message {
+    top: -29%;
+    height: 129%;
+  }
+}
+@media (max-width: 500px) {
+  aside {
+    flex-direction: column;
+  }
+  aside img {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 476px) {
+  h1 {
+    font-size: 154%;
+  }
+  .year {
+    font-size: 121%;
+  }
+  .title {
+    font-size: 16px;
+  }
+}
+@media (max-width: 446px) {
+  #message {
+    height: 120%;
+    top: -20%;
+  }
+}
+@media (max-width: 440px) {
+  h1 {
+    font-size: 154%;
+  }
+}
+@media (max-width: 406px) {
+  h1 {
+    font-size: 154%;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+}
+@media (max-width: 392px) {
+  .month {
+    flex-basis: 40%;
+  }
+  #message {
+    top: -12%;
+  }
+}
+@media (max-width: 359px) {
+  #message {
+    top: -6%;
+    height: 113%;
+  }
+}
+@media (max-width: 313px) {
+  #message {
+    top: 0%;
+    height: 106%;
+  }
+}
+@media (max-width: 287px) {
+  h1 {
+    font-size: 140%;
+  }
+}
